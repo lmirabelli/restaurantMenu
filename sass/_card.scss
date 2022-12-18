@@ -1,0 +1,112 @@
+#foodMenu{
+    .card{
+        display: flex;
+        justify-content: space-between;
+        background-color: $color1;
+        border: 2px solid rgba($colorBlack, 0.4);
+        img{
+            box-shadow: 3px 6px 18px $colorBlack;
+            
+        }
+            div{
+                text-align: center;
+                h2,h3{
+                    height: 15%;
+                }
+                h3{
+                    font-size: 1.2rem;
+                    color: $colorWhite;
+                    line-height: 1.4rem;
+                    font-family: 'mainFont';
+                }
+                p{
+                    height: 70%;
+                    font-size: 0.7rem;
+                    font-family: 'mainFont';
+                }
+                h2{
+                    font-family: 'titleCardFont';
+                }
+            }
+    }
+}
+
+
+@media (max-width: 380px){
+    #foodMenu{
+        width: 100vw;
+        .card{
+            width: 90%;
+            margin: 15px auto;
+            height: 150px;
+            img{
+                width: 30%;
+                object-fit: cover;
+                border-radius: 0 75px 75px 0;
+            }
+            div{
+                width: 70%;
+            }
+        }
+    }
+}
+@media (min-width: 381px) and (max-width: 500px){
+    #foodMenu{
+        width: 100vw;
+        .card{
+            width: 90%;
+            margin: 15px auto;
+            height: 150px;
+            img{
+                width: 35%;
+                border-radius: 0 75px 75px 0;
+            }
+            div{
+                width: 65%;
+            }
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 800px){
+    #foodMenu{
+        width: 100vw;
+        .card{
+            width: 90%;
+            margin: 15px auto;
+            height: 140px;
+            img{
+                width: 45%;
+                border-radius: 0 70px 70px 0;
+            }
+            div{
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media (min-width: 801px){
+    #foodMenu{
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            width: 46%;
+            margin: 3px 2%;
+            height: 160px;
+            img{
+                width: 45%;
+                border-radius: 0 80px 80px 0;
+            }
+            div{
+                width: 55%;
+                h2{
+                    font-size: 22px;
+                    line-height: 2.2rem;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
